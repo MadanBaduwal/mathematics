@@ -14,9 +14,9 @@
     
         ,"post1": {
             "title": "Matrix",
-            "content": "About . In this notebook we will implement matrix operations from Gilbart Strang Book Introduction to Linear Algebra, Fifth Edition (2016) . Chapter 1 . Introduction to Vectors . Chapter 2 . Solving Linear Equations . Matrix Multiplication . import numpy as np . begin{bmatrix} 1 &amp; 2 &amp; 3 a &amp; b &amp; c end{bmatrix} A = np.array([[1,2,3], [4,5,6]]) column_vector = np.array([[1], [2], [3]]) . print(np.dot(A,column_vector)) . [[14] [32]] .",
-            "url": "https://madanbaduwal.github.io/mathematics/chapter%201%20introduction%20to%20vectors/2020/08/17/Introductiontovectors.html",
-            "relUrl": "/chapter%201%20introduction%20to%20vectors/2020/08/17/Introductiontovectors.html",
+            "content": "About . In this notebook we will implement Chapter 1 &quot;Introduction to Vectors&quot; from Gilbart Strang Book Introduction to Linear Algebra, Fifth Edition (2016) . Chapter 1 . Introduction to Vectors .",
+            "url": "https://madanbaduwal.github.io/mathematics/linear%20algebra/2020/08/17/Introductiontovectors.html",
+            "relUrl": "/linear%20algebra/2020/08/17/Introductiontovectors.html",
             "date": " • Aug 17, 2020"
         }
         
