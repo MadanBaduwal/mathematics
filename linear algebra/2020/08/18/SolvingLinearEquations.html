@@ -10,8 +10,8 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A tutorial of matrix operations." />
 <meta property="og:description" content="A tutorial of matrix operations." />
-<link rel="canonical" href="https://madanbaduwal.github.io/mathematics/jupyter/2020/08/18/SolvingLinearEquations.html" />
-<meta property="og:url" content="https://madanbaduwal.github.io/mathematics/jupyter/2020/08/18/SolvingLinearEquations.html" />
+<link rel="canonical" href="https://madanbaduwal.github.io/mathematics/linear%20algebra/2020/08/18/SolvingLinearEquations.html" />
+<meta property="og:url" content="https://madanbaduwal.github.io/mathematics/linear%20algebra/2020/08/18/SolvingLinearEquations.html" />
 <meta property="og:site_name" content="fastpages" />
 <meta property="og:image" content="https://madanbaduwal.github.io/mathematics/images/chart-preview.png" />
 <meta property="og:type" content="article" />
@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://madanbaduwal.github.io/mathematics/images/chart-preview.png" />
 <meta property="twitter:title" content="Matrix" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-08-18T00:00:00-05:00","datePublished":"2020-08-18T00:00:00-05:00","description":"A tutorial of matrix operations.","headline":"Matrix","image":"https://madanbaduwal.github.io/mathematics/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://madanbaduwal.github.io/mathematics/jupyter/2020/08/18/SolvingLinearEquations.html"},"url":"https://madanbaduwal.github.io/mathematics/jupyter/2020/08/18/SolvingLinearEquations.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-08-18T00:00:00-05:00","datePublished":"2020-08-18T00:00:00-05:00","description":"A tutorial of matrix operations.","headline":"Matrix","image":"https://madanbaduwal.github.io/mathematics/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://madanbaduwal.github.io/mathematics/linear%20algebra/2020/08/18/SolvingLinearEquations.html"},"url":"https://madanbaduwal.github.io/mathematics/linear%20algebra/2020/08/18/SolvingLinearEquations.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/mathematics/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://madanbaduwal.github.io/mathematics/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/mathematics/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -88,7 +88,7 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/mathematics/categories/#jupyter">jupyter</a>
+        <a class="category-tags-link" href="/mathematics/categories/#Linear Algebra">Linear Algebra</a>
         
       
       </p>
@@ -127,6 +127,8 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#About">About </a></li>
+<li class="toc-entry toc-h1"><a href="#Chapter-2">Chapter 2 </a></li>
+<li class="toc-entry toc-h1"><a href="#Solving-Linear-Equations">Solving Linear Equations </a></li>
 <li class="toc-entry toc-h1"><a href="#Matrix-Multiplication">Matrix Multiplication </a></li>
 </ul><!--
 #################################################
@@ -143,8 +145,20 @@ window.onload = wrap_img;
 <h1 id="About">
 <a class="anchor" href="#About" aria-hidden="true"><span class="octicon octicon-link"></span></a>About<a class="anchor-link" href="#About"> </a>
 </h1>
-<p>In this notebook we will implement matrix operations from Gilbart Strang Book <a href="https://math.mit.edu/~gs/linearalgebra/">Introduction to Linear Algebra, Fifth Edition (2016)</a></p>
+<p>In this notebook we will implement Chapter 2 "Solving Linear Equations" from Gilbart Strang Book <a href="https://math.mit.edu/~gs/linearalgebra/">Introduction to Linear Algebra, Fifth Edition (2016)</a></p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Chapter-2">
+<a class="anchor" href="#Chapter-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Chapter 2<a class="anchor-link" href="#Chapter-2"> </a>
+</h1>
+<h1 id="Solving-Linear-Equations">
+<a class="anchor" href="#Solving-Linear-Equations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solving Linear Equations<a class="anchor-link" href="#Solving-Linear-Equations"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -174,6 +188,69 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{bmatrix}
+1 &amp; 2 &amp; 3\\
+a &amp; b &amp; c
+\end{bmatrix}
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
+<span class="n">column_vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">],</span>
+                          <span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                          <span class="p">[</span><span class="mi">3</span><span class="p">]])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">column_vector</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[14]
+ [32]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
@@ -186,7 +263,7 @@ window.onload = wrap_img;
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/mathematics/jupyter/2020/08/18/SolvingLinearEquations.html" hidden></a>
+</script><a class="u-url" href="/mathematics/linear%20algebra/2020/08/18/SolvingLinearEquations.html" hidden></a>
 </article>
 
       </div>
